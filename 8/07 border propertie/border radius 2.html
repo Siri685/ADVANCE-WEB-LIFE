@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Advanced Bullet Shape</title>
+<style>
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #a4b6e0;
+  }
+  .bullet-text {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    fill: #1c1a4a;
+  }
+</style>
+</head>
+<body>
+
+<svg width="750" height="420" viewBox="0 0 500 280" fill="none">
+
+  <!-- Magenta: left vertical edge, round caps for the rounded corners -->
+  <line x1="20" y1="20" x2="20" y2="260"
+        stroke="#9a1a84" stroke-width="25" stroke-linecap="round" />
+
+  <!-- Green: top straight edge -->
+  <line x1="20" y1="20" x2="350" y2="20"
+        stroke="#4f9a2a" stroke-width="25" stroke-linecap="round" />
+
+  <!-- Yellow-green: upper-right quarter of the curve -->
+  <path d="M350,20 A120,120 0 0,1 470,140"
+        stroke="#a3c62e" stroke-width="25" fill="none" stroke-linecap="round" />
+
+  <!-- Blue: lower-right quarter of the curve -->
+  <path d="M470,140 A120,120 0 0,1 350,260"
+        stroke="#1e8fd0" stroke-width="25" fill="none" stroke-linecap="round" />
+
+  <!-- Blue: bottom straight edge -->
+  <line x1="350" y1="260" x2="20" y2="260"
+        stroke="#1e8fd0" stroke-width="25" stroke-linecap="round" />
+
+  <!-- Text -->
+  <text x="250" y="148" text-anchor="middle" class="bullet-text">Advanced Bullet</text>
+
+</svg>
+
+</body>
+</html>

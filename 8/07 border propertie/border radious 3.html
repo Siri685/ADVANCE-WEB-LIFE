@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Advanced Round Rectangle</title>
+<style>
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #a0b2e0;
+  }
+  .rr-text {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    fill: #232e6d;
+    text-anchor: middle;
+  }
+</style>
+</head>
+<body>
+
+<svg width="800" height="500" viewBox="0 0 800 500">
+
+  <defs>
+    <!-- Fades from faint at the tips to solid purple in the middle -->
+    <linearGradient id="arcFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#8c7fd0" stop-opacity="0.15" />
+      <stop offset="50%" stop-color="#8c7fd0" stop-opacity="1" />
+      <stop offset="100%" stop-color="#8c7fd0" stop-opacity="0.15" />
+    </linearGradient>
+  </defs>
+
+  <!-- Left double-arc "((" -->
+  <path d="M92.5,45.0 C15.0,125.0 15.0,375.0 92.5,455.0"
+        stroke="url(#arcFade)" stroke-width="6" fill="none" stroke-linecap="round" />
+  <path d="M107.5,75.0 C60.0,160.0 60.0,340.0 107.5,425.0"
+        stroke="url(#arcFade)" stroke-width="5" fill="none" stroke-linecap="round" />
+
+  <!-- Right double-arc "))" -->
+  <path d="M707.5,45.0 C785.0,125.0 785.0,375.0 707.5,455.0"
+        stroke="url(#arcFade)" stroke-width="6" fill="none" stroke-linecap="round" />
+  <path d="M692.5,75.0 C740.0,160.0 740.0,340.0 692.5,425.0"
+        stroke="url(#arcFade)" stroke-width="5" fill="none" stroke-linecap="round" />
+
+  <!-- Text -->
+  <text x="400" y="245" class="rr-text">Advanced Round</text>
+  <text x="400" y="295" class="rr-text">Rectangle</text>
+
+</svg>
+
+</body>
+</html>

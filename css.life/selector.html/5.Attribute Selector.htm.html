@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          input[type]{
+            background-color: blue;
+        }
+         input[type="text"]{
+            background-color: honeydew
+        }
+         input[placeholder~='email']
+        {
+            background-color: honeydew
+        } 
+         p[lang |='en']
+        {
+            background-color: navy;
+        }
+         a[href^=https]
+        {
+            background-color: chocolate;
+        }
+          a[href$=com]
+        {
+            background-color: hotpink;
+        } 
+         input[placeholder*="email"]
+         {
+            background-color: aqua;
+         } 
+    </style>
+</head>
+<body>
+    <p lang="en-us">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, rerum dolorum? Voluptatum ratione in porro minus necessitatibus voluptatem odit? Dolorum quibusdam debitis at iure, cupiditate nobis vero quisquam? Pariatur, ducimus.</p>
+    <form action="">
+        <label for="">userName:</label> <br>
+    <input type="text" placeholder="Enter your name">
+        <label for="">UserEmail:</label><br>
+    <input type="email" placeholder="Enter email"> <br>
+</form>
+<a href="https:google.com">GOOGLE</a>
+<a href="http:amazon.com">AMAZON</a>
+<a href="www.linkedin">LINKEDIN</a>
+</body>
+</html>
+<!-- Attribute Selector 
+ (i)tagname[attribute]--Selects elements that have the specified attribute.
+ (ii)tagname[attribute="value"]--Selects elements whose attribute exactly matches the value.
+ (iii)tagname[attribute~="value"]--Selects elements whose attribute contains the specified word.
+ (iv)tagname[attribute^="value"]--Selects elements whose attribute starts with the specified value.
+ (v)tagname[attribute$="value"]--Selects elements whose attribute ends with the specified value.
+ (vi)tagname[attribute*="value"]--Selects elements whose attribute contains the specified value.
+ (vii)tagname[attri]-->

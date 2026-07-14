@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* h1::first-letter{
+            font-size:150px;
+            color: red;
+        } */
+         /* p::first-line{
+            color:cadetblue;
+        } */
+         /* p::before {
+            content: "RAndom things to be added before paragrah";
+            color: greenyellow;
+        }
+         p::after{
+            content: "end of the para";
+            color:blueviolet;
+        } */
+        P::selection{
+            background-color: red;
+            color: white;
+        }
+         li::marker{
+            content: "✔";
+        }
+        input::placeholder{
+            color: blue;
+        }  
+    </style>
+</head>
+<body>
+    <h1>Yashu</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi expedita rerum numquam mollitia neque illo culpa, dolor itaque totam? Fugit, veritatis vero commodi perferendis fuga quam illo doloremque voluptate eius?</p>
+<ol>
+    <li>List 1</li>
+    <li>List 2</li>
+    <li>List 3</li>
+    <li>List 4</li>
+</ol>
+<form action="">
+    <input type="text" placeholder="Enter your name">
+</form>
+</body>
+</html>
+ <!-- 1. Pseudo Element Selector is used in article publishing 
+     2. It is denoted in ::
+     3. it has (i) First-letter
+               (ii) First-line
+            (iii) Before--Inserts content before an element.
+            (iv) After--Inserts content after an element.Selector will use content which is to be added in double quotes
+            (v) Selection -- Styles the selected text.It is used to select the background color
+            (vi)MArker-- is used for (bullet,numbers) list items
+            (vii)Placeholder -- Styles placeholder text in input fields.-->

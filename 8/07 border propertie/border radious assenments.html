@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Advanced CSS Borders</title>
+<style type="text/css">
+
+  body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    padding: 60px;
+  }
+
+  .row {
+    display: flex;
+    gap: 80px;
+    margin-bottom: 80px;
+  }
+
+  .shape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    color: #000;
+  }
+
+  /* Advanced Hemisphere */
+  #adv-hemisphere {
+    width: 220px;
+    height: 110px;
+    border-width: 6px 40px 6px 40px;
+    border-style: groove ridge dashed groove;
+    border-color: #2ecc71;
+    border-radius: 160px 160px 0 0;
+    padding-top: 20px;
+    align-items: flex-start;
+  }
+
+  /* Advanced Round Rectangle */
+  #adv-round-rectangle {
+    width: 180px;
+    height: 90px;
+    border-width: 0px 12px 0px 12px;
+    border-style: double;
+    border-color: violet;
+    border-radius: 60px 60px 90px 90px;
+  }
+
+  /* Advanced Bullet */
+  #adv-bullet {
+    width: 200px;
+    height: 200px;
+    border-width: 8px;
+    border-style: groove;
+    border-color: #8fd400 #d4ff00 #00d4ff #ff00c8;
+    border-radius: 40px 160px 160px 40px;
+  }
+
+  /* Advanced Leaf */
+  #adv-leaf {
+    width: 260px;
+    height: 200px;
+    background: #8fd400;
+    border-width: 8px 40px 8px 40px;
+    border-style: solid;
+    border-color: #00d4ff #00d4ff #ff00c8 #ff00c8;
+    border-radius: 0 200px 0 200px;
+  }
+
+</style>
+</head>
+<body>
+
+  <div class="row">
+
+    <div id="adv-hemisphere" class="shape">Advanced Hemisphere</div>
+    <div id="adv-round-rectangle" class="shape">Advanced Round Rectangle</div>
+  </div>
+
+  <div class="row">
+   <div id="adv-bullet" class="shape">Advanced Bullet</div>
+    <div id="adv-leaf" class="shape">Advanced Leaf</div>
+  </div>
+
+</body>
+</html>

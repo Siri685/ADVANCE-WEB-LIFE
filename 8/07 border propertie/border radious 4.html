@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Advanced Hemisphere</title>
+<style>
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #a0b4df;
+  }
+  .arch-text {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 34px;
+    fill: #232e6d;
+  }
+</style>
+</head>
+<body>
+
+<svg width="900" height="540" viewBox="0 0 1000 600">
+
+  <!-- Outer dark-green ring: the shadow/edge of the tube -->
+  <path d="M 40,520 A 460,460 0 0 1 960,520"
+        stroke="#2a651e" stroke-width="130" fill="none" />
+
+  <!-- Inner light-green ring: the highlighted face, slightly smaller
+       so the dark green peeks out as a thin edge on both sides -->
+  <path d="M 40,520 A 460,460 0 0 1 960,520"
+        stroke="#5a9c31" stroke-width="100" fill="none" />
+
+  <!-- Dashed baseline (the hemisphere's diameter) -->
+  <line x1="30" y1="520" x2="970" y2="520"
+        stroke="#5a9c31" stroke-width="10" stroke-dasharray="25,18" />
+
+  <!-- Text -->
+  <text x="260" y="185" class="arch-text">Advanced Hemisphere</text>
+
+</svg>
+
+</body>
+</html>
