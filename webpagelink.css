@@ -1,0 +1,90 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    width: 100%;
+    height: 90px;
+    border: 1px solid;
+}
+nav{
+    height: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    position: relative;
+}
+.leftnav h1 img{
+    height: 55px;
+    width: 200px;
+    align-items: start;
+}
+.leftnav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+leftnav h1{
+    letter-spacing: 2px;
+}
+.leftnav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+   list-style-type: none;
+}
+.leftnav button{
+    justify-content: center;
+}
+.rightnav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 30px;
+}
+button{
+    border: 1px solid gray;
+   padding: 10px 80px;
+    border-radius: 20px;
+    align-items: center;
+}
+main {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+}
+.left-main {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    font-weight: bold;
+    gap: 80px 20px;
+    line-height: 30px;
+    padding-left: 30px;
+    position: absolute;
+    top: 100px;
+}
+.left-main ul{
+    list-style-type: none;
+}
+.Browser{
+    color: #5b5c5f;
+    letter-spacing: 1px;
+    line-height: 1.833;
+}
+.Library{
+    display: flex;
+ color: #5b5c5f;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+

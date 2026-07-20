@@ -6,26 +6,17 @@
     <title>Document</title>
     <style>
         .main{
-            display:flex;
-            width: 600px;
+            
+            width: 400px;
             height: 500px;
             border:2px solid;
-            flex-wrap:wrap; 
-            align-content:flex-start;
-            
+            display: flex;
+            flex-direction: column;    
         }
-            .box{
-
-                background-color: red;
-                border: solid;
-            }
-            
-            #box-2{
-                flex-grow: 2;
-            }
-            #box-1{
-                flex-grow: 2;
-            }
+         
+          #box-2{
+            flex: 2 50 200px;
+          }
     
         .box{
             width: 100px;
