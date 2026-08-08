@@ -1,0 +1,25 @@
+//2)).ASSENMENT Operator
+//=
+x=8
+y=8
+console.log(x=y);
+//+=
+a=8
+b=20
+console.log(a+=b);
+//-=
+c=77
+d=66
+console.log(c-=d);
+//*=
+e=9
+f=3
+console.log(e*=f);
+// /=
+g=9
+h=2
+console.log(g/=h);
+// %=
+i=9
+j=2
+console.log(i%=j);
